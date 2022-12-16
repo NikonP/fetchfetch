@@ -7,7 +7,7 @@
     <img src="https://img.shields.io/github/last-commit/NikonP/fetchfetch?style=flat-square">
     <img src="https://img.shields.io/github/forks/NikonP/fetchfetch?style=flat-square">
     <img src="https://img.shields.io/github/stars/NikonP/fetchfetch?style=flat-square">
-    <img src="https://github.com/NikonP/fetchfetch/actions/workflows/go.yml/badge.svg">
+    <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/NikonP/fetchfetch/go.yml?branch=main&style=flat-square">
     <br>
     <br>
     <img src="https://user-images.githubusercontent.com/25433108/207963797-ee3d70d5-839d-4040-b99e-12c572427195.png">
