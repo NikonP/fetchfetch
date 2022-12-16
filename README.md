@@ -20,6 +20,8 @@
 go install github.com/NikonP/fetchfetch@latest
 ```
 
+or grab binary from [releases](https://github.com/NikonP/fetchfetch/releases)
+
 ## 2 - Update
 
 ```
