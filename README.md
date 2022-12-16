@@ -14,6 +14,13 @@
 </div>
 </div>
 
+
+## 1 - Requirements
+
+`make` - for the installer
+
+`go` - for installing fetchfetch/executing fetchfetch
+
 ## 1 - Install
 
 ```
