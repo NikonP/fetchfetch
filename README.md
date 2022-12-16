@@ -14,17 +14,29 @@
 </div>
 </div>
 
-## 1 - Install
+
+## 1 - Requirements
+
+`make` - for the installer
+
+`go` - for installing fetchfetch/executing fetchfetch
+
+## 2 - Install
 
 ```
-go install github.com/NikonP/fetchfetch@latest
+$ make install
 ```
 
 or grab binary from [releases](https://github.com/NikonP/fetchfetch/releases)
 
-## 2 - Update
+## 3 - Update
 
 ```
-rm ~/go/bin/fetchfetch
-go install github.com/NikonP/fetchfetch@latest
+$ make update
+```
+
+## 4 - Uninstall
+
+```
+$ make uninstall
 ```
