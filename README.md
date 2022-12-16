@@ -10,3 +10,10 @@ Fetch all your fetches
 ```
 go install github.com/NikonP/fetchfetch@latest
 ```
+
+## Update
+
+```
+rm ~/go/bin/fetchfetch
+go install github.com/NikonP/fetchfetch@latest
+```
