@@ -58,16 +58,16 @@ jobs:
       run: GOOS=openbsd GOARCH=386 go build -o builds/fetchfetch-latest-openbsd-386
 
     - name: Build windows amd64
-      run: GOOS=windows GOARCH=amd64 go build -o builds/fetchfetch-latest-windows-amd64
+      run: GOOS=windows GOARCH=amd64 go build -o builds/fetchfetch-latest-windows-amd64.exe
       
     - name: Build windows arm64
-      run: GOOS=windows GOARCH=arm64 go build -o builds/fetchfetch-latest-windows-arm64
+      run: GOOS=windows GOARCH=arm64 go build -o builds/fetchfetch-latest-windows-arm64.exe
       
     - name: Build windows arm
-      run: GOOS=windows GOARCH=arm go build -o builds/fetchfetch-latest-windows-arm
+      run: GOOS=windows GOARCH=arm go build -o builds/fetchfetch-latest-windows-arm.exe
 
     - name: Build windows 386
-      run: GOOS=windows GOARCH=386 go build -o builds/fetchfetch-latest-windows-386
+      run: GOOS=windows GOARCH=386 go build -o builds/fetchfetch-latest-windows-386.exe
 
 
       
