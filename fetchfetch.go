@@ -33,6 +33,7 @@ var fetches = []string{
 	"archfetch",
 	"cfetch",
 	"shutthefetchup",
+	"uwufetch",
 	"onefetch",
 	"picofetch",
 	"macchima",
