@@ -1,0 +1,43 @@
+# This workflow will build a golang project
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-go
+
+name: Go
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Go
+      uses: actions/setup-go@v3
+      with:
+        go-version: 1.19
+
+    - name: Build linux amd64
+      run: GOOS=linux GOARCH=amd64 go build -o builds/fetfetch-latest-linux-amd64
+      
+    - name: Build linux arm64
+      run: GOOS=linux GOARCH=arm64 go build -o builds/fetfetch-latest-linux-arm64
+      
+    - name: Build linux arm
+      run: GOOS=linux GOARCH=arm go build -o builds/fetfetch-latest-linux-arm
+
+    - name: Build linux 386
+      run: GOOS=linux GOARCH=386 go build -o builds/fetfetch-latest-linux-386
+      
+    - uses: "marvinpinto/action-automatic-releases@latest"
+      with:
+        repo_token: "${{ secrets.GITHUB_TOKEN }}"
+        automatic_release_tag: "latest"
+        prerelease: true
+        title: "GitHub action Build"
+        files: |
+          builds/*
