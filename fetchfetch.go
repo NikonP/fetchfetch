@@ -24,6 +24,7 @@ import (
 )
 
 var fetches = []string{
+  "fetchfetch",
 	"neofetch",
 	"pfetch",
 	"ramfetch",
