@@ -21,7 +21,7 @@
 
 `go` - for installing fetchfetch/executing fetchfetch
 
-## 1 - Install
+## 2 - Install
 
 ```
 $ make install
@@ -29,13 +29,13 @@ $ make install
 
 or grab binary from [releases](https://github.com/NikonP/fetchfetch/releases)
 
-## 2 - Update
+## 3 - Update
 
 ```
 $ make update
 ```
 
-## 3 - Uninstall
+## 4 - Uninstall
 
 ```
 $ make uninstall
