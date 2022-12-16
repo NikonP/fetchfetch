@@ -25,6 +25,7 @@ import (
 
 var fetches = []string{
 	"fetchfetch",
+	"shutthefetchup",
 	"neofetch",
 	"pfetch",
 	"ramfetch",
@@ -32,7 +33,6 @@ var fetches = []string{
 	"nerdfetch",
 	"archfetch",
 	"cfetch",
-	"shutthefetchup",
 	"onefetch",
 	"hyfetch",
 	"uwufetch",
