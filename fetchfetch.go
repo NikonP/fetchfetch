@@ -34,7 +34,8 @@ var fetches = []string{
 	"shutthefetchup",
 	"onefetch",
 	"picofetch",
-	"macchima"
+	"macchima",
+	"minifetch",
 }
 
 func fetchExists(fetch string) bool {
