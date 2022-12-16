@@ -17,7 +17,7 @@
 ## 1 - Install
 
 ```
-go install github.com/NikonP/fetchfetch@latest
+$ make install
 ```
 
 or grab binary from [releases](https://github.com/NikonP/fetchfetch/releases)
@@ -25,6 +25,11 @@ or grab binary from [releases](https://github.com/NikonP/fetchfetch/releases)
 ## 2 - Update
 
 ```
-rm ~/go/bin/fetchfetch
-go install github.com/NikonP/fetchfetch@latest
+$ make update
+```
+
+## 3 - Uninstall
+
+```
+$ make uninstall
 ```
