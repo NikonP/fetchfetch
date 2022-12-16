@@ -22,52 +22,52 @@ jobs:
         go-version: 1.19
 
     - name: Build linux amd64
-      run: GOOS=linux GOARCH=amd64 go build -o builds/fetfetch-latest-linux-amd64
+      run: GOOS=linux GOARCH=amd64 go build -o builds/fetchfetch-latest-linux-amd64
       
     - name: Build linux arm64
-      run: GOOS=linux GOARCH=arm64 go build -o builds/fetfetch-latest-linux-arm64
+      run: GOOS=linux GOARCH=arm64 go build -o builds/fetchfetch-latest-linux-arm64
       
     - name: Build linux arm
-      run: GOOS=linux GOARCH=arm go build -o builds/fetfetch-latest-linux-arm
+      run: GOOS=linux GOARCH=arm go build -o builds/fetchfetch-latest-linux-arm
 
     - name: Build linux 386
-      run: GOOS=linux GOARCH=386 go build -o builds/fetfetch-latest-linux-386
+      run: GOOS=linux GOARCH=386 go build -o builds/fetchfetch-latest-linux-386
 
     - name: Build freebsd amd64
-      run: GOOS=freebsd GOARCH=amd64 go build -o builds/fetfetch-latest-freebsd-amd64
+      run: GOOS=freebsd GOARCH=amd64 go build -o builds/fetchfetch-latest-freebsd-amd64
       
     - name: Build freebsd arm64
-      run: GOOS=freebsd GOARCH=arm64 go build -o builds/fetfetch-latest-freebsd-arm64
+      run: GOOS=freebsd GOARCH=arm64 go build -o builds/fetchfetch-latest-freebsd-arm64
       
     - name: Build freebsd arm
-      run: GOOS=freebsd GOARCH=arm go build -o builds/fetfetch-latest-freebsd-arm
+      run: GOOS=freebsd GOARCH=arm go build -o builds/fetchfetch-latest-freebsd-arm
 
     - name: Build freebsd 386
-      run: GOOS=freebsd GOARCH=386 go build -o builds/fetfetch-latest-freebsd-386
+      run: GOOS=freebsd GOARCH=386 go build -o builds/fetchfetch-latest-freebsd-386
 
     - name: Build openbsd amd64
-      run: GOOS=openbsd GOARCH=amd64 go build -o builds/fetfetch-latest-openbsd-amd64
+      run: GOOS=openbsd GOARCH=amd64 go build -o builds/fetchfetch-latest-openbsd-amd64
       
     - name: Build openbsd arm64
-      run: GOOS=openbsd GOARCH=arm64 go build -o builds/fetfetch-latest-openbsd-arm64
+      run: GOOS=openbsd GOARCH=arm64 go build -o builds/fetchfetch-latest-openbsd-arm64
       
     - name: Build openbsd arm
-      run: GOOS=openbsd GOARCH=arm go build -o builds/fetfetch-latest-openbsd-arm
+      run: GOOS=openbsd GOARCH=arm go build -o builds/fetchfetch-latest-openbsd-arm
 
     - name: Build openbsd 386
-      run: GOOS=openbsd GOARCH=386 go build -o builds/fetfetch-latest-openbsd-386
+      run: GOOS=openbsd GOARCH=386 go build -o builds/fetchfetch-latest-openbsd-386
 
     - name: Build windows amd64
-      run: GOOS=windows GOARCH=amd64 go build -o builds/fetfetch-latest-windows-amd64
+      run: GOOS=windows GOARCH=amd64 go build -o builds/fetchfetch-latest-windows-amd64
       
     - name: Build windows arm64
-      run: GOOS=windows GOARCH=arm64 go build -o builds/fetfetch-latest-windows-arm64
+      run: GOOS=windows GOARCH=arm64 go build -o builds/fetchfetch-latest-windows-arm64
       
     - name: Build windows arm
-      run: GOOS=windows GOARCH=arm go build -o builds/fetfetch-latest-windows-arm
+      run: GOOS=windows GOARCH=arm go build -o builds/fetchfetch-latest-windows-arm
 
     - name: Build windows 386
-      run: GOOS=windows GOARCH=386 go build -o builds/fetfetch-latest-windows-386
+      run: GOOS=windows GOARCH=386 go build -o builds/fetchfetch-latest-windows-386
 
 
       
