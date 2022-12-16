@@ -26,6 +26,7 @@ import (
 var fetches = []string{
 	"fetchfetch",
 	"shutthefetchup",
+	"nofetch",
 	"neofetch",
 	"pfetch",
 	"ramfetch",
