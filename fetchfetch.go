@@ -24,6 +24,7 @@ import (
 )
 
 var fetches = []string{
+	"fetchfetch",
 	"neofetch",
 	"pfetch",
 	"ramfetch",
@@ -33,6 +34,12 @@ var fetches = []string{
 	"cfetch",
 	"shutthefetchup",
 	"onefetch",
+	"hyfetch",
+	"uwufetch",
+	"picofetch",
+	"macchima",
+	"minifetch",
+	"paleofetch",
 }
 
 func fetchExists(fetch string) bool {
