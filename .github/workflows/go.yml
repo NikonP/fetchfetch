@@ -56,6 +56,20 @@ jobs:
 
     - name: Build openbsd 386
       run: GOOS=openbsd GOARCH=386 go build -o builds/fetfetch-latest-openbsd-386
+
+    - name: Build windows amd64
+      run: GOOS=windows GOARCH=amd64 go build -o builds/fetfetch-latest-windows-amd64
+      
+    - name: Build windows arm64
+      run: GOOS=windows GOARCH=arm64 go build -o builds/fetfetch-latest-windows-arm64
+      
+    - name: Build windows arm
+      run: GOOS=windows GOARCH=arm go build -o builds/fetfetch-latest-windows-arm
+
+    - name: Build windows 386
+      run: GOOS=windows GOARCH=386 go build -o builds/fetfetch-latest-windows-386
+
+
       
     - uses: "marvinpinto/action-automatic-releases@latest"
       with:
