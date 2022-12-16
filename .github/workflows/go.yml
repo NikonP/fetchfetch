@@ -44,6 +44,18 @@ jobs:
 
     - name: Build freebsd 386
       run: GOOS=freebsd GOARCH=386 go build -o builds/fetfetch-latest-freebsd-386
+
+    - name: Build openbsd amd64
+      run: GOOS=openbsd GOARCH=amd64 go build -o builds/fetfetch-latest-openbsd-amd64
+      
+    - name: Build openbsd arm64
+      run: GOOS=openbsd GOARCH=arm64 go build -o builds/fetfetch-latest-openbsd-arm64
+      
+    - name: Build openbsd arm
+      run: GOOS=openbsd GOARCH=arm go build -o builds/fetfetch-latest-openbsd-arm
+
+    - name: Build openbsd 386
+      run: GOOS=openbsd GOARCH=386 go build -o builds/fetfetch-latest-openbsd-386
       
     - uses: "marvinpinto/action-automatic-releases@latest"
       with:
