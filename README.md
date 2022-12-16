@@ -1,3 +1,5 @@
+[![Go](https://github.com/NikonP/fetchfetch/actions/workflows/go.yml/badge.svg)](https://github.com/NikonP/fetchfetch/actions/workflows/go.yml)
+
 # fetchfetch
 Fetch all your fetches
 
@@ -10,6 +12,8 @@ Fetch all your fetches
 ```
 go install github.com/NikonP/fetchfetch@latest
 ```
+
+or grab binary from [releases](https://github.com/NikonP/fetchfetch/releases)
 
 ## Update
 
