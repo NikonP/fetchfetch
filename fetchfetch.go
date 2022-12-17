@@ -41,6 +41,8 @@ var fetches = []string{
 	"macchima",
 	"minifetch",
 	"paleofetch",
+	"cpufetch",
+	"gpufetch",
 }
 
 func fetchExists(fetch string) bool {
