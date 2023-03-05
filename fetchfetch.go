@@ -44,6 +44,7 @@ var fetches = []string{
 	"cpufetch",
 	"gpufetch",
 	"fastfetch",
+	"wfetch"
 }
 
 func fetchExists(fetch string) bool {
