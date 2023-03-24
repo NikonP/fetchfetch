@@ -38,7 +38,7 @@ var fetches = []string{
 	"hyfetch",
 	"uwufetch",
 	"picofetch",
-	"macchima",
+	"macchina",
 	"minifetch",
 	"paleofetch",
 	"cpufetch",
