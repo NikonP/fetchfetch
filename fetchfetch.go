@@ -18,72 +18,60 @@ package main
 //              /,_/      '`-'
 
 import (
-	"os/exec"
+	"fmt"
+	"os"
 
-	"github.com/fatih/color"
+	"github.com/NikonP/fetchfetch/fetch"
+	"github.com/jedib0t/go-pretty/v6/table"
+	"github.com/jedib0t/go-pretty/v6/text"
 )
 
-var fetches = []string{
-	"fetchfetch",
-	"shutthefetchup",
-	"nofetch",
-	"neofetch",
-	"pfetch",
-	"ramfetch",
-	"ufetch",
-	"nerdfetch",
-	"archfetch",
-	"cfetch",
-	"onefetch",
-	"hyfetch",
-	"uwufetch",
-	"picofetch",
-	"macchina",
-	"minifetch",
-	"paleofetch",
-	"cpufetch",
-	"gpufetch",
-	"fastfetch",
-	"wfetch",
-}
-
-func fetchExists(fetch string) bool {
-	_, err := exec.LookPath(fetch)
-	return err == nil
-}
-
 func main() {
-	headerStyle := color.New(color.FgGreen)
-	headerStyle.Add(color.Bold)
+	t := table.NewWriter()
+	t.SetOutputMirror(os.Stdout)
+	t.SetAllowedRowLength(80)
+	t.SetStyle(table.StyleColoredGreenWhiteOnBlack)
 
-	fetchStyle := color.New(color.BgCyan)
-	fetchStyle.Add(color.FgBlack)
-
-	isInstalledStyle := color.New(color.FgGreen)
-	isNotInstalledStyle := color.New(color.FgRed)
-
-	cyan := color.New(color.FgCyan)
-
-	omgStyle := color.New(color.FgRed)
-	omgStyle.Add(color.BlinkSlow)
-
-	headerStyle.Print("### FetchFetch ###\n\n")
+	t.AppendHeader(table.Row{
+		"Fetch",
+		"Description",
+		"Is installed",
+	})
 
 	installedCount := 0
+	totalFetchesCount := len(fetch.Fetches)
 
-	for _, fetch := range fetches {
-		fetchStyle.Printf("%20s", fetch)
+	for _, fetch := range fetch.Fetches {
+		isInstalled := ""
 
-		if fetchExists(fetch) {
-			isInstalledStyle.Println(" is installed")
+		if fetch.FetchExists() {
 			installedCount += 1
-		} else {
-			isNotInstalledStyle.Println(" is not installed")
+			isInstalled = text.FgGreen.Sprint("[+]")
 		}
+
+		t.AppendRow(table.Row{
+			fetch.Name,
+			fetch.Description,
+			isInstalled,
+		})
 	}
 
-	cyan.Printf("\nFetches installed: %d\n", installedCount)
-	if installedCount == 0 {
-		omgStyle.Println("OMG no fetches installed!!!")
-	}
+	t.AppendFooter(table.Row{
+		"",
+		"",
+		fmt.Sprintf(
+			"%d/%d",
+			installedCount,
+			totalFetchesCount,
+		),
+	})
+
+	t.AppendSeparator()
+
+	t.Render()
+
+	t = table.NewWriter()
+	t.SetOutputMirror(os.Stdout)
+	t.SetAllowedRowLength(80)
+	t.SetStyle(table.StyleColoredGreenWhiteOnBlack)
 }
