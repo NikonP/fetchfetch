@@ -42,6 +42,10 @@ var Fetches = []Fetch{
 		Description: "Smol fetch",
 	},
 	{
+		Name:        "christmasfetch",
+		Description: "Gift idea: a new *fetch for *nix",
+	},
+	{
 		Name:        "cpufetch",
 		Description: "CPU architecture fetching tool",
 	},
@@ -50,8 +54,16 @@ var Fetches = []Fetch{
 		Description: "Neofetch but cuter",
 	},
 	{
+		Name:		 "diyfetch",
+		Description: "Gum-made info fetching script",
+	},
+	{
 		Name:		 "efetch",
 		Description: "Neofetch written in C++",
+	},
+	{
+		Name:		 "exfetch",
+		Description: "Neofetch for your ex",
 	},
 	{
 		Name:        "fastfetch",
@@ -84,6 +96,10 @@ var Fetches = []Fetch{
 	{
 		Name:		 "info.sh",
 		Description: "Neofetch that show infos...?",
+	},
+	{
+		Name:		 "ipfetch",
+		Description: "Neofetch but fetches ip stuff",
 	},
 	{
 		Name:		 "jfetch",
@@ -142,6 +158,10 @@ var Fetches = []Fetch{
 		Description: "Neofetch for kids",
 	},
 	{
+		Name:        "ppfetch",
+		Description: "ILoveAnimals kinda fetch",
+	},
+	{
 		Name:		 "pwy",
 		Description: "Neofetch but for weather",
 	},
@@ -160,6 +180,10 @@ var Fetches = []Fetch{
 	{
 		Name:        "ramfetch",
 		Description: "Neoetch for RAM info",
+	},
+	{
+		Name:        "redfetch",
+		Description: "Neoetch for bats",
 	},
 	{
 		Name:		 "sf",
