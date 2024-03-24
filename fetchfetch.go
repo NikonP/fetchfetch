@@ -47,13 +47,13 @@ func main() {
 		if fetch.FetchExists() {
 			installedCount += 1
 			isInstalled = text.FgGreen.Sprint("[+]")
+			t.AppendRow(table.Row{
+				fetch.Name,
+				fetch.Description,
+				isInstalled,
+			})
 		}
 
-		t.AppendRow(table.Row{
-			fetch.Name,
-			fetch.Description,
-			isInstalled,
-		})
 	}
 
 	t.AppendFooter(table.Row{
