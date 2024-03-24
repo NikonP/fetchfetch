@@ -218,6 +218,10 @@ var Fetches = []Fetch{
 		Description: "Another fetch written in shell",
 	},
 	{
+		Name:		 "twidgets",
+		Description: "Pacman ftw",
+	},
+	{
 		Name:        "ufetch",
 		Description: "Tiny fetch",
 	},
