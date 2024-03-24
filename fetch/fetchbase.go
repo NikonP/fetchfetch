@@ -22,6 +22,10 @@ var Fetches = []Fetch{
 		Description: "Le101 frfr",
 	},
 	{
+		Name:		 "abfetch",
+		Description: "IDK My blood type isn't AB so whatever",
+	},
+	{
 		Name:		 "afetch",
 		Description: "Another Neofetch written in C",
 	},
@@ -82,8 +86,16 @@ var Fetches = []Fetch{
 		Description: "Onefetch online version",
 	},
 	{
+		Name:		 "gofetch",
+		Description: "Neofetch but shows Python install",
+	},
+	{
 		Name:        "gpufetch",
 		Description: "GPU architecture fetching tool",
+	},
+	{
+		Name:		 "gufetch",
+		Description: "Onefetch online version",
 	},
 	{
 		Name:		 "hentaifetch",
@@ -140,6 +152,10 @@ var Fetches = []Fetch{
 	{
 		Name:        "owofetch",
 		Description: "owo",
+	},
+	{
+		Name:		 "oxidefetch",
+		Description: "Neofetch compact"
 	},
 	{
 		Name:        "paleofetch",
@@ -211,7 +227,7 @@ var Fetches = []Fetch{
 	},
 	{
 		Name:		 "vfetch",
-		Description: "Sounds like fetch",
+		Description: "Applefetch",
 	},
 	{
 		Name:        "wfetch",
