@@ -58,6 +58,10 @@ var Fetches = []Fetch{
 		Description: "Neofetch written in C",
 	},
 	{
+		Name:        "fetchcord",
+		Description: "Neofetch but for Discord",
+	},
+	{
 		Name:		 "gfetch",
 		Description: "Onefetch alternative",
 	},
@@ -116,6 +120,10 @@ var Fetches = []Fetch{
 	{
 		Name:        "onefetch",
 		Description: "Neofetch for Git repos",
+	},
+	{
+		Name:        "owofetch",
+		Description: "owo",
 	},
 	{
 		Name:        "paleofetch",
